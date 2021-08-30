@@ -293,7 +293,7 @@ a {
   width: 26rem;
 
 
-}
+}  
 .card-img{
   height: 60%;
   width: 98%;
@@ -376,6 +376,18 @@ a:active {
    border-radius: 500px;
 }
 
+
+
+.card-img:hover{
+  transform: scale(1.6);
+  transition: all 2s;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 5px 20px 9px rgb(153, 150, 150);
+  
+}
+
+/* /////// */
 .project {
   margin: 4em 0;
   position: relative;
@@ -428,6 +440,9 @@ a:active {
   margin: 5rem;
 
 }
+
+
+
 .contact-form h1 {
   padding: 1em 1px;
   color: var(--om);
