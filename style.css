@@ -474,7 +474,19 @@ a:active {
   .header h1 {
     margin-top: 120px;
   }
+.video{
+ display: flex;
+ max-width: 300px;
 
+}
+.card{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.card-text {
+  max-height: 50;
+}
 
 }
 
