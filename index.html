@@ -9,10 +9,40 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <!--navbar-->
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg fixed-top ">
 
-  <!-- <div class="collapse navbar-collapse " id="navbarSupportedContent">     -->
+<body>
+
+
+<div class="navigation">
+  <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+  <label for="navi-toggle" class="navigation-button">
+    <span class="navigation-icon">&nbsp;</span>
+</label>
+<div class="navigation-background">&nbsp;</div>
+<nav class="navigation-nav">
+    <ul id="menu" class="navigation-list">
+        <li class="navigation__item"><a class="nav-link" data-value="home" href="#home">Home</a></li>
+        <li class="navigation__item"><a class="nav-link" data-value="about" href="#about">About</a></li>
+        <li class="navigation__item"><a class="nav-link " data-value="netlify" href="#netlify">Projects</a></li>
+        <li class="navigation__item"> <a class="nav-link" data-value="reactNative" href="#apps">Apps</a></li>
+        <li class="navigation__item"><a class="nav-link " data-value="contact" href="#contact">Contact</a></li>
+        
+    </ul>
+</nav>
+</div>
+
+
+
+
+
+
+<!-- navbar -->
+
+
+
+
+<!-- <nav class="navbar navbar-expand-lg fixed-top navbar-default ">
+ 
   <ul class="navbar-nav mr-3">
     <li class="nav-item">
       <a class="nav-link" data-value="home" href="#home">Home</a>
@@ -20,9 +50,7 @@
     <li class="nav-item">
       <a class="nav-link" data-value="about" href="#about">About</a>
     </li>
-    <!-- <li class="nav-item">
-      <a class="nav-link " data-value="photography" href="#photography">Photography</a>
-    </li> -->
+   
     
     <li class="nav-item">
       <a class="nav-link " data-value="netlify" href="#netlify">Projects</a>
@@ -30,20 +58,16 @@
     <li class="nav-item">
       <a class="nav-link" data-value="reactNative" href="#apps">Apps</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link " data-value="casestudies" href="#casestudies">Case Studies</a>
-    </li>
+   
     <li class="nav-item">
       <a class="nav-link " data-value="contact" href="#contact">Contact</a>
     </li>
   </ul>
-
   </div>
-
-</nav>
+</nav> -->
 
 <header class="header" id='home'>
-  <div class="overlay"></div>
+ 
   <div class="container">
     <div class="description">
       <h1>Ryan Hartley
@@ -311,8 +335,20 @@
     </div>
 
 
+    <script>
+      var menu = document.getElementById('menu');
+      var closeIcon = document.getElementById('navi-toggle');
+ 
+      menu.addEventListener('click', handleMenuClick);
+ 
+      function handleMenuClick(event) {
+        if (event.target instanceof HTMLAnchorElement) {
+          closeIcon.checked = false;
+        }
+      }
+    </script>
 
-
+  </body>
 
 
 

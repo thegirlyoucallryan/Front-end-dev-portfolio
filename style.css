@@ -19,40 +19,139 @@ a {
 
 }
 
+/* Navigation */
 
-.navbar{
-  background-color: rgba(255, 255, 255, 0.747)
+
+.navigation-checkbox{
+  display: none;
+}
+.navigation-button{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  position: fixed; 
+  top: 7.6rem;
+  right: 11.5rem;
+  background-image: radial-gradient(var(--om), white);
+  z-index: 2009;
+  transition: all .8s;
 }
 
-.nav-link,
-.navbar-brand {
-  
-  color: var(--om);
-  cursor: pointer;
-  font-size: 1rem;
-  letter-spacing: 2px;
+.navigation-background{
+  background-image: radial-gradient(var(--om), white);
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  top: 7.6rem;
+  right: 11.5rem;
+  z-index: 1000;
+  border-radius: 50%;
+  box-shadow: 0 1rem 1rem #2323;
+  text-align: center;
+  transition: all .8s;
+}
+
+.navigation-nav{
+
+  height: 100vh;
+        width:100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1500;
+        width: 0;
+        transition: all .8s;
+}
+
+.navigation-list{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 20%;
+}
+
+.navigation__item{
+  margin: 1rem;
+  list-style: none;
+
+}
+
+
+.nav-link:link,
+.nav-link:visited{
+  display: inline-block;
+  font-size: 2rem;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: 300;
+  background-size: 232%;
+  text-decoration: none;
   text-transform: uppercase;
-  margin-right: 1.2rem;
-}
-
-.nav-link:hover {
-  letter-spacing: 4px;
-  font-size: 1rem;
-  color: var(--om);
-  text-shadow: inset 1px .1rem lightGrey;
-  
-  
-  
+  background-image: linear-gradient(120deg,transparent 0%, transparent 50%, white 50%);
+  transition: all 1s;
 
 }
 
+.nav-link:hover,
 .nav-link:active{
-  background-color: transparent;
-  border: 1px solid var(--om);
-  transition: all .2s;
-  border-radius: 100px;
+  background-position: 100%;
+  color: orangered;
   
+
+
+
 }
+
+
+/* Checkbox */
+
+.navigation-checkbox:checked ~ .navigation-background{
+  transform: scale(90);
+}
+.navigation-checkbox:checked ~ .navigation-nav{
+
+  width: 100%;
+}
+
+
+/* icon */
+
+
+.navigation-icon{
+  position: relative;
+  margin-top: 2.5rem;
+  margin-left: 1.2rem;
+}
+
+
+.navigation-icon,
+.navigation-icon::before,
+.navigation-icon::after{
+  width: 2.5rem;
+  height: 2px;
+  background: black;
+  display: inline-block
+
+}
+
+.navigation-icon::before,
+.navigation-icon::after{
+          content: '';
+           position: absolute;
+           left: 0;
+           transition: all .3s;
+
+}
+.navigation-icon::before{top: -.8rem}
+.navigation-icon::after{top: .8rem;}
+  
+
+
+
+
+
+
 
 /*header style*/
 .header {
@@ -293,6 +392,7 @@ a {
   width: 26rem;
 
 
+
 }  
 .card-img{
   height: 60%;
@@ -384,6 +484,7 @@ a:active {
   position: relative;
   z-index: 10;
   box-shadow: 0 5px 20px 9px rgb(153, 150, 150);
+  background-color: white;
 
 
   
@@ -464,13 +565,9 @@ a:active {
 }
 
 @media only screen and (max-width: 1000px) {
-  .nav-link {
-    font-size: 15px;
-  }
+  
 
-  .header {
-    margin-top: 250px;
-  }
+ 
   .header h1 {
     margin-top: 120px;
   }
@@ -547,12 +644,14 @@ a:active {
 
   
   .nav-link{
-    display: flex;
-    flex-wrap: no-wrap;
-    flex-direction: row;
-    flex: 2 2 40%;
+    display: block !important;
+ 
+   
   }
 }
+
+
+
 
 
 
