@@ -122,6 +122,9 @@ a {
   position: relative;
   margin-top: 1.9rem;
   margin-left: 1.2rem;
+  left: 0;
+  transition: all .6s;
+
 }
 
 
@@ -143,7 +146,8 @@ a {
 .navigation-icon::after{
           content: 'MENU';
            position: absolute;
-           
+           font-weight: 100;
+           font-family: Playfair Display;
            
            left: 0;
            transition: all .3s;
@@ -411,14 +415,20 @@ a {
   width: 100%;
 }
 
-.blog .card-title {
-  color: var(--om);
+ .card-title {
+ 
   text-align: center;
   font-size: 1.3rem;
+  color:var(--twoThree) !important;
+  font-weight: 100;
+  font-family: Playfair Display;
+  
 }
 
 .blog .card-body {
   padding: .1rem;
+  font-weight: 100;
+  font-family: Playfair Display;
   
 }
 .card-footer a:link
