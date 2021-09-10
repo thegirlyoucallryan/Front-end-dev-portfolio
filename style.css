@@ -30,9 +30,9 @@ a {
   height: 5rem;
   border-radius: 50%;
   position: fixed; 
-  top: 7.6rem;
-  right: 11.5rem;
-  background-image: radial-gradient(var(--om), white);
+  top: 7rem;
+  right: 10rem;
+  background-image: radial-gradient(var(--om), rgba(20, 85, 12, 0.459));
   z-index: 2009;
   transition: all .8s;
 }
@@ -42,8 +42,8 @@ a {
   height: 5rem;
   width: 5rem;
   position: fixed;
-  top: 7.6rem;
-  right: 11.5rem;
+  top: 7rem;
+  right: 10rem;
   z-index: 1000;
   border-radius: 50%;
   box-shadow: 0 1rem 1rem #2323;
@@ -592,7 +592,7 @@ a:active {
     font-size: 30px;
   }
   .header p {
-    font-size: 18px;
+    font-size: 20px;
   }
   .header {
     background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2018%2F05%2F15%2F21%2F36%2Fbackground-3404345_640.jpg&f=1&nofb=1);
@@ -603,13 +603,15 @@ a:active {
     margin-left: 0 auto;
     height: 90%;
     width: 60%;
+   
 
     border-radius: 100%;
   }
-  .about {
+  .about p {
     margin: 2em 0;
     padding: 0.5em;
     position: relative;
+    font-size: 30;
   }
   .desc h1 {
     color: #f8070a;
@@ -640,15 +642,7 @@ a:active {
 
 
 
-@media (max-width: 991px) {
 
-  
-  .nav-link{
-    display: block !important;
- 
-   
-  }
-}
 
 
 
