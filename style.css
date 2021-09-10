@@ -161,7 +161,7 @@ a {
 
 /*header style*/
 .header {
-  background-image: linear-gradient(to right, rgba(248, 245, 245, 0.685), rgba(233, 227, 227, 0.897)),url('./Image/small-portfolio-background.jpg');
+  background-image: linear-gradient(to right, rgba(248, 245, 245, 0.685), rgba(233, 227, 227, 0.897)),url('./Image/portfolio.background.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
