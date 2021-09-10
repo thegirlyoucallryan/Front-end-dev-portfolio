@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Merriweather&display=swap");
 
 :root {
-  --om: #d66442;
+  --om: #db634e;
   --twoThree: #232323;
   
 }
@@ -38,7 +38,7 @@ a {
 }
 
 .navigation-background{
-  background-image: radial-gradient(var(--om), white);
+  background-image: radial-gradient(var(--om), rgba(255, 255, 255, 0.842));
   height: 5rem;
   width: 5rem;
   position: fixed;
@@ -81,9 +81,9 @@ a {
 .nav-link:link,
 .nav-link:visited{
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: white;
-  padding: 1rem 2rem;
+  padding: .5rem 2rem;
   font-weight: 300;
   background-size: 232%;
   text-decoration: none;
@@ -96,7 +96,7 @@ a {
 .nav-link:hover,
 .nav-link:active{
   background-position: 100%;
-  color: orangered;
+  color: var(--om);
   
 
 
@@ -120,25 +120,31 @@ a {
 
 .navigation-icon{
   position: relative;
-  margin-top: 2.5rem;
+  margin-top: 1.9rem;
   margin-left: 1.2rem;
 }
 
 
 .navigation-icon,
-.navigation-icon::before,
 .navigation-icon::after{
-  width: 2.5rem;
+  width: 2.8rem;
   height: 2px;
   background: black;
   display: inline-block
 
 }
 
-.navigation-icon::before,
-.navigation-icon::after{
-          content: '';
+.navigation-icon::before{
+  content: '';
            position: absolute;
+           left: 0;
+           transition: all .3s;
+}
+.navigation-icon::after{
+          content: 'MENU';
+           position: absolute;
+           
+           
            left: 0;
            transition: all .3s;
 
@@ -314,15 +320,7 @@ a {
 }
 
 
-.about img {
-  height: 60%;
-  width: 100%;
-  border: 4px solid whitesmoke;
-  margin: 15%;
 
-  border-radius: 1000rem;
-  box-sizing: border-box;
-}
 
 .desc {
   padding: 2em;
@@ -390,28 +388,35 @@ a {
 .blog .card {
   box-shadow: 0 5px 20px 9px whitesmoke;
   height: 35rem;
-  width: 26rem;
-
+  max-width: 24rem;
+ 
 
 
 }  
 .card-img{
-  height: 60%;
+  height: 98%;
   width: 98%;
-  border-bottom: 2px solid whitesmoke;
+
   
 }
  .card img {
  
   width: 100%;
-  height: 100%;
+  height: 98%;
  
 }
+.video{
+  margin-top: 8px;
+  height: 98%;
+  width: 100%;
+}
+
 .blog .card-title {
   color: var(--om);
   text-align: center;
   font-size: 1.3rem;
 }
+
 .blog .card-body {
   padding: .1rem;
   
