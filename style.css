@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Merriweather&display=swap");
 
 :root {
-  --om: #d46354;
+  --om: #d66442;
   --twoThree: #232323;
   
 }
@@ -31,8 +31,8 @@ a {
   border-radius: 50%;
   position: fixed; 
   top: 7rem;
-  right: 10rem;
-  background-image: radial-gradient(var(--om), rgba(20, 85, 12, 0.459));
+  right: 8rem;
+  background-image: radial-gradient( white, var(--om));
   z-index: 2009;
   transition: all .8s;
 }
@@ -43,7 +43,7 @@ a {
   width: 5rem;
   position: fixed;
   top: 7rem;
-  right: 10rem;
+  right: 8rem;
   z-index: 1000;
   border-radius: 50%;
   box-shadow: 0 1rem 1rem #2323;
@@ -281,7 +281,7 @@ a {
 
 #profile-link {
   border: none;
-  background-image: linear-gradient(to right bottom, var(--om) 55%, var(--twoThree));
+  background-image: linear-gradient(to right bottom, var(--om) 55%, white);
   border-radius: 5px;
   padding: 0.4rem 1.3rem;
   color: #fff;
