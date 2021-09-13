@@ -453,11 +453,11 @@ a {
   display: inline-block;
 }
 
-.card-footer a:hover,
+/* .card-footer a:hover,
 a:active {
   background-color: var(--om);
   color: black;
-}
+} */
 
 
 
