@@ -1,9 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Merriweather&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital@0;1&display=swap');
 
 :root {
   --om: #db634e;
   --twoThree: #232323;
   
+}
+*{
+  font-family: Playfair Display;
 }
 
 html,
@@ -223,7 +227,7 @@ a {
 
 .netlify h1{
   color: var(--om);
-  font-family: Lora;
+  
   margin: 5rem;
 
 }
@@ -268,24 +272,26 @@ a {
   height: 100vh;
 }
 
-.description h1::before {
-  content: "";
-  background-color: var(--twoThree);
-  width: 35px;
-  height: 60px;
-}
+
 .description h1 {
   color: var(--om);
-  font-family: "Lora";
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 4.5px;
+  font-family: Playfair Display;
+  font-style: italic;
+  
+  
+  
 }
 
 .description p {
   color: var(--twoThree);
   font-size: 20px;
   width: 100%;
-  font-family: "Merriweather Display";
+  
  
-  margin-left: 1em;
+  
   text-align: left;
   line-height: 1.5;
 }
@@ -300,6 +306,7 @@ a {
   font-size: 1.3rem;
   box-shadow: 0 1.4rem 7rem #636363;
   transition:  all.2s;
+  padding: .4rem 2rem;
     
 }
 
@@ -323,6 +330,10 @@ a {
   
 }
 
+.about p{
+  font-family: Montserrat  !important;
+}
+
 
 
 
@@ -334,7 +345,7 @@ a {
 .desc h1 {
   color: var(--om);
   margin: 2em;
-  font-family: "Lora";
+  
  
 }
 
@@ -356,7 +367,7 @@ a {
 .portfolio h1 {
   color: var(--om);
   margin: 2em;
-  font-family: "Lora";
+ 
 }
 .portfolio img {
   height: 100%;
@@ -384,7 +395,7 @@ a {
 .blog h1 {
   color: var(--om);
   margin: 2em;
-  font-family: "Lora";
+ 
 }
 
 
@@ -514,7 +525,7 @@ a:active {
 .project h1 {
   color: var(--om);
   margin: 2em;
-  font-family: "Lora";
+
 }
 .project .item {
   position: relative;
@@ -555,7 +566,7 @@ a:active {
 }
 .reactNative h1{
   color: var(--om);
-  font-family: Lora;
+ 
   margin: 5rem;
 
 }
@@ -565,7 +576,7 @@ a:active {
 .contact-form h1 {
   padding: 1em 1px;
   color: var(--om);
-  font-family: "Lora";
+  
 }
 
 .contact-form h3 {
@@ -578,6 +589,18 @@ a:active {
   letter-spacing: 1px;
   font-family: Playfair Display;
   
+}
+
+.top{
+  display: flex;
+  justify-content: flex-end;
+  margin: 3rem 0;
+  color:var(--om)
+}
+
+.top:hover{
+  color: var(--twoThree);
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -623,12 +646,14 @@ a:active {
 
     border-radius: 100%;
   }
+
   .about p {
     margin: 2em 0;
     padding: 0.5em;
     position: relative;
-    font-size: 30;
+   
   }
+
   .desc h1 {
     color: #f8070a;
     text-align: center;
