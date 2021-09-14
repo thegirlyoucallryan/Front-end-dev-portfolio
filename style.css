@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital@0;1&display=swap');
 
 :root {
-  --om: #db634e;
+  --om: #515553;
   --twoThree: #232323;
   
 }
@@ -125,7 +125,7 @@ a {
 .navigation-icon{
   position: relative;
   margin-top: 1.9rem;
-  margin-left: 1.2rem;
+  margin-left: 1.1rem;
   left: 0;
   transition: all .6s;
 
@@ -444,7 +444,7 @@ a {
 }
 .card-footer a:link
  {
-  background-color: #f44336;
+  background-color: #aa3636;
   color: white;
   padding: 10px 20px;
   border-radius: 3px;
